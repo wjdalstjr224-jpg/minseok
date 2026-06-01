@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>급식톡 - 구미전자공업고등학교</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🍽 급식톡</h1>
+      <p>구미전자공업고등학교 급식 평가 플랫폼</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>구미전자공업고등학교</h2>
+      <p id="todayDate"></p>
+    </section>
+
+    <section class="card">
+      <h3>오늘의 급식</h3>
+      <ul id="mealList"></ul>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h4>평균 평점</h4>
+        <span id="avgRating">0.0</span>
+      </div>
+
+      <div class="stat-card">
+        <h4>후기 수</h4>
+        <span id="commentCount">0</span>
+      </div>
+
+      <div class="stat-card">
+        <h4>사진 수</h4>
+        <span id="photoCount">0</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>급식 평가</h3>
+
+      <div class="star-container">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+
+      <button id="rateBtn">평가 등록</button>
+    </section>
+
+    <section class="card">
+      <h3>급식 사진 업로드</h3>
+
+      <input type="file" id="photoInput" accept="image/*">
+
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section class="card">
+      <h3>급식 후기</h3>
+
+      <textarea id="commentInput" placeholder="급식 후기를 작성하세요"></textarea>
+
+      <button id="commentBtn">등록</button>
+
+      <div id="commentList"></div>
+    </section>
+
+    <section class="card">
+      <h3>인기 메뉴 랭킹</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>순위</th>
+            <th>메뉴</th>
+            <th>평점</th>
+          </tr>
+        </thead>
+        <tbody id="rankingBody"></tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
