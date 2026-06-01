@@ -1,0 +1,156 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+  color:#333;
+}
+
+header{
+  background:#4f46e5;
+  color:white;
+  padding:30px;
+  text-align:center;
+}
+
+.container{
+  width:1200px;
+  margin:30px auto;
+}
+
+.hero{
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  margin-bottom:20px;
+  box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  margin-bottom:20px;
+  box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card h3{
+  margin-bottom:20px;
+}
+
+#mealList{
+  padding-left:20px;
+}
+
+#mealList li{
+  margin:8px 0;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-bottom:20px;
+}
+
+.stat-card{
+  background:white;
+  padding:20px;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.stat-card span{
+  display:block;
+  margin-top:10px;
+  font-size:32px;
+  font-weight:bold;
+  color:#4f46e5;
+}
+
+.star-container{
+  font-size:45px;
+  margin-bottom:20px;
+}
+
+.star{
+  cursor:pointer;
+  color:#ccc;
+}
+
+.star.active{
+  color:#fbbf24;
+}
+
+button{
+  background:#4f46e5;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#4338ca;
+}
+
+textarea{
+  width:100%;
+  height:120px;
+  margin-bottom:10px;
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:10px;
+}
+
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:15px;
+}
+
+.gallery img{
+  width:220px;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.comment{
+  background:#f8fafc;
+  padding:15px;
+  margin-top:10px;
+  border-radius:10px;
+  position:relative;
+}
+
+.delete-btn{
+  position:absolute;
+  right:10px;
+  top:10px;
+  background:#ef4444;
+  padding:5px 10px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th{
+  background:#4f46e5;
+  color:white;
+}
+
+th,td{
+  border:1px solid #eee;
+  padding:12px;
+  text-align:center;
+}
